@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - TextField - Rotate Placeholder</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <label :data-before="before" :data-after="after" :class="{animate: shouldAnimate}" @animationend="animationEnded">
+    <input type="text" :placeholder="placeholder" @focus="isFocusing = true" @blur="isFocusing = false" @keydown="doSearch">
+  </label>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
